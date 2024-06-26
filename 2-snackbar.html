@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
     
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-5dd7d6cc.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-12b06142.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-cb8c6490.js"></script>
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-0a45d681.css">
   </head>
   <body>
     <section>
@@ -15,7 +15,27 @@
       <h1>Welcome to page 3</h1>
     </section>
 
+    <form class="form">
+      <label class="label-delay">
+        Delay (ms)
+        <input class="input-delay" type="number" name="delay" required />
+      </label>
     
+      <fieldset class="fieldset-state">
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+    
+      <button class="btn-create" type="submit">Create notification</button>
+    </form>
+
     
   </body>
 </html>
