@@ -37,16 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
       const selectedDate = selectedDates[0];
 
       if (!selectedDate) {
-        startButton.disabled = true; 
+        startButton.disabled = true;
       } else if (selectedDate < new Date()) {
         
         iziToast.error({
           title: 'Error',
           message: 'Please choose a date in the future'
         });
-        startButton.disabled = true; 
+        startButton.disabled = true;
       } else {
-        startButton.disabled = false; 
+        startButton.disabled = false;
       }
     }
   });
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
   datetimePicker.addEventListener('focus', function() {
     const selectedDate = flatpickr.parseDate(datetimePicker.value, 'Y-m-d H:i');
     if (!selectedDate) {
-      startButton.disabled = true; 
+      startButton.disabled = true;
     }
   });
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       datetimePicker.disabled = false;
       startButton.disabled = false;
-      return; 
+      return;
     }
 
     let timeDiff = selectedDate.getTime() - new Date().getTime();
@@ -102,3 +102,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   });
 });
+

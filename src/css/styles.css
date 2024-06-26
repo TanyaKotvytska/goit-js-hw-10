@@ -66,3 +66,48 @@
     line-height: 1.5;
     color: #2e2f42;
 }
+
+.label-delay {
+  display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-delay {
+  border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.fieldset-state {
+  border-radius: 4px;
+    stroke-width: 1px;
+    stroke: #808080;
+    width: 360px;
+      height: 40px;
+      margin-bottom: 24px;
+}
+
+.btn-create {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    background: #4e75ff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+}
+
+.btn-create:hover {
+  background: #6c8cff;
+}
