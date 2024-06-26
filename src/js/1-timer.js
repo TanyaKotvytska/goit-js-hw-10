@@ -43,7 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
         iziToast.error({
           title: 'Error',
           message: 'Please choose a date in the future',
-          position: 'topRight'
+          position: 'topRight',
+          backgroundColor: '#EF4040',
+          messageColor: '#FFF',
+          titleColor: '#FFF',
+          iconColor: '#FFF',
+          timeout: 5000,
+          displayMode: 2,
         });
         startButton.disabled = true;
       } else {
@@ -71,7 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
-        position: 'topRight'
+        position: 'topRight',
+        backgroundColor: '#EF4040',
+        messageColor: '#FFF',
+        titleColor: '#FFF',
+        iconColor: '#FFF',
+        timeout: 5000,
+        displayMode: 2,
       });
       datetimePicker.disabled = false;
       startButton.disabled = false;
