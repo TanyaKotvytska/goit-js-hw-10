@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         iziToast.error({
           title: 'Error',
-          message: 'Please choose a date in the future'
+          message: 'Please choose a date in the future',
+          position: 'topRight'
         });
         startButton.disabled = true;
       } else {
@@ -69,7 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (selectedDate <= new Date()) {
       iziToast.error({
         title: 'Error',
-        message: 'Please choose a date in the future'
+        message: 'Please choose a date in the future',
+        position: 'topRight'
       });
       datetimePicker.disabled = false;
       startButton.disabled = false;
@@ -90,7 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
         startButton.disabled = false;
         iziToast.success({
           title: 'Countdown Finished',
-          message: 'Timer has ended!'
+          message: 'Timer has ended!',
+          position: 'topRight'
         });
       } else {
         const time = convertMs(timeDiff);
